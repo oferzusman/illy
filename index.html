@@ -174,7 +174,7 @@
     .icon-facebook svg { color: #1877F2; }
     .icon-gallery svg { color: var(--gold); }
     .thumbs {
-      display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 18px;
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 10px;
     }
     .thumbs a {
       display: block; aspect-ratio: 1 / 1; border-radius: 16px; overflow: hidden;
@@ -186,22 +186,16 @@
     }
     .thumbs a:hover img { transform: scale(1.05); }
     .panel-footer {
-      text-align: center; margin-top: 18px; color: var(--muted2); font-size: 12px; line-height: 1.5;
+      text-align: center; margin-top: 10px; color: var(--muted2); font-size: 12px; line-height: 1.5;
     }
     .hero-content {
       min-height: 760px; display: flex; flex-direction: column; justify-content: flex-end;
-      padding: 34px 42px 44px; direction: rtl;
-    }
-    .hero-pill {
-      align-self: flex-start; min-height: 38px; padding: 0 16px; border-radius: 999px;
-      border: 1px solid rgba(232,209,139,.30); background: rgba(0,0,0,.28);
-      color: var(--gold); display: inline-flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 700; margin-bottom: 18px;
+      padding: 34px 42px 18px; direction: rtl;
     }
     .hash {
-      direction: ltr; align-self: flex-start; font-size: clamp(24px, 3vw, 40px);
+      width: 100%; text-align: left; direction: ltr; font-size: clamp(18px, 2.2vw, 28px);
       font-weight: 900; letter-spacing: -.03em; color: #fff; text-shadow: 0 3px 18px rgba(0,0,0,.6);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .hero-title {
       margin: 0; font-size: clamp(74px, 9vw, 108px); line-height: .9; letter-spacing: -.085em;
@@ -209,15 +203,15 @@
     }
     .hero-title span { display: block; }
     .en-name {
-      display: block; margin-top: 18px; direction: ltr; text-align: left; color: var(--gold);
-      font-size: clamp(30px, 3.2vw, 48px); line-height: 1.05; font-weight: 800; letter-spacing: -.02em;
+      display: block; width: 100%; margin-top: 10px; direction: ltr; text-align: left; color: var(--gold);
+      font-size: clamp(28px, 3vw, 42px); line-height: 1.05; font-weight: 800; letter-spacing: -.02em;
       text-shadow: 0 6px 20px rgba(0,0,0,.42);
     }
     .hero-bio {
       max-width: 710px; margin: 18px 0 0; color: rgba(255,247,235,.82);
       font-size: clamp(17px, 2vw, 20px); line-height: 1.7; text-shadow: 0 2px 14px rgba(0,0,0,.4);
     }
-    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
     .mini-btn {
       min-height: 44px; padding: 0 18px; border-radius: 999px;
       border: 1px solid rgba(255,247,235,.18); background: rgba(255,255,255,.08);
@@ -236,7 +230,7 @@
       body { padding: 10px; }
       .panel, .hero { border-radius: 28px; }
       .panel { padding: 22px 18px 20px; }
-      .hero-content { padding: 24px 24px 28px; }
+      .hero-content { padding: 24px 24px 18px; }
       .avatar-wrap { width: 142px; height: 142px; }
       .panel-head h2 { font-size: 22px; }
       .thumbs { grid-template-columns: repeat(3, 1fr); }
@@ -316,8 +310,7 @@
 
     <section class="hero" aria-label="איליי זוסמן ריאל">
       <div class="hero-content">
-        <div class="hero-pill">זמר בלהקה צבאית</div>
-        <div class="hash">#Singer &amp; Musician</div>
+<div class="hash">#Singer &amp; Musician</div>
         <h1 class="hero-title"><span>איליי</span><span>זוסמן ריאל</span></h1>
         <span class="en-name">Illy Zussman Real</span>
         <p class="hero-bio">זמר ונגן. קול צעיר, נוכחות שקטה, מוזיקה שמתחילה מהלב, מתפתחת בחדר החזרות ועולה לבמה.</p>
