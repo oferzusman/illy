@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <script>
+    (function () {
+      var basePath = location.pathname.indexOf('/illy') === 0 ? '/illy/' : '/';
+      document.write('<base href="' + basePath + '">');
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>איליי זוסמן ריאל | Illy Zussman Real</title>
+  <meta name="description" content="איליי זוסמן ריאל — Illy Zussman Real. זמר בלהקה צבאית, זמר ונגן. כל הקישורים הרשמיים: YouTube, Spotify, Instagram, TikTok, Facebook וגלריית תמונות." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0c0b0a" />
+  <link rel="canonical" href="https://zeuschef.co.il/illy/" />
+
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://zeuschef.co.il/illy/" />
+  <meta property="og:title" content="איליי זוסמן ריאל | Illy Zussman Real" />
+  <meta property="og:description" content="זמר בלהקה צבאית · Singer & Musician · כל הקישורים הרשמיים במקום אחד." />
+  <meta property="og:image" content="https://zeuschef.co.il/illy/assets/profile-square.jpg" />
+  <meta property="og:site_name" content="Illy Zussman Real" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="איליי זוסמן ריאל | Illy Zussman Real" />
+  <meta name="twitter:description" content="זמר בלהקה צבאית · Singer & Musician" />
+  <meta name="twitter:image" content="https://zeuschef.co.il/illy/assets/profile-square.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "איליי זוסמן ריאל",
+    "alternateName": "Illy Zussman Real",
+    "jobTitle": "Singer & Musician",
+    "description": "איליי זוסמן ריאל — זמר ונגן, זמר בלהקה צבאית.",
+    "image": "https://zeuschef.co.il/illy/assets/profile-square.jpg",
+    "url": "https://zeuschef.co.il/illy/",
+    "sameAs": [
+      "https://www.youtube.com/@illyzussmanreal",
+      "https://open.spotify.com/artist/32C8Elyy3YypFnic0X2vpi?si=2SJ1TY1cQb2b4W4DuRNNbg&nd=1&dlsi=cfc3e7312ccd4ad7",
+      "https://www.instagram.com/illy_zussman_real",
+      "https://www.tiktok.com/@illy.zussman.real",
+      "https://www.facebook.com/profile.php?id=61554417440826"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090807;
+      --bg-soft: #12100e;
+      --text: #fff7e8;
+      --muted: rgba(255,247,232,.76);
+      --faint: rgba(255,247,232,.12);
+      --gold: #d9b66e;
+      --gold-soft: #f1ddaa;
+      --glass: rgba(14, 12, 11, .72);
+      --panel: rgba(17, 15, 13, .84);
+      --shadow: 0 28px 90px rgba(0,0,0,.48);
+      --radius: 34px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Arial, "Rubik", "Noto Sans Hebrew", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(217,182,110,.22), transparent 26%),
+        radial-gradient(circle at 86% 18%, rgba(95,57,26,.28), transparent 30%),
+        linear-gradient(145deg, #050505 0%, #14100c 48%, #070707 100%);
+    }
+    body { padding: 16px; }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      width: min(1150px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 420px minmax(0, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .panel, .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,247,232,.10);
+      background: var(--glass);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(10,9,9,.92), rgba(15,13,12,.86));
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .hero {
+      min-height: 760px;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.18) 34%, rgba(0,0,0,.78)),
+        url("assets/hero.jpg") center / cover no-repeat;
+      z-index: -2;
+      transform: scale(1.01);
+      filter: contrast(1.03) saturate(.9);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.52), transparent 48%, rgba(0,0,0,.14)),
+        radial-gradient(circle at 50% 0%, transparent, rgba(0,0,0,.36) 70%, rgba(0,0,0,.72));
+      z-index: -1;
+    }
+
+    .hero-content {
+      min-height: 760px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(24px, 4vw, 40px);
+    }
+
+    .avatar-wrap {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(145deg, var(--gold-soft), rgba(255,255,255,.09), #8b6432);
+      box-shadow: 0 16px 44px rgba(0,0,0,.42);
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      display: block;
+      border: 4px solid #0d0d0d;
+    }
+
+    .panel-head {
+      text-align: center;
+      padding-bottom: 6px;
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: -.03em;
+    }
+
+    .panel-head p {
+      margin: 10px auto 0;
+      max-width: 320px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link {
+      min-height: 66px;
+      padding: 0 18px;
+      border-radius: 22px;
+      display: grid;
+      grid-template-columns: 46px 1fr 24px;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid rgba(255,247,232,.11);
+      background: linear-gradient(135deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .link:hover, .link:focus {
+      transform: translateY(-2px);
+      border-color: rgba(241,221,170,.46);
+      background: linear-gradient(135deg, rgba(241,221,170,.14), rgba(255,255,255,.04));
+      outline: none;
+    }
+
+    .icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,247,232,.09);
+    }
+
+    .icon-box svg { width: 24px; height: 24px; display: block; }
+
+    .icon-instagram svg { color: #E4405F; }
+    .icon-tiktok svg { color: #ffffff; }
+    .icon-facebook svg { color: #1877F2; }
+    .icon-youtube svg { color: #FF0000; }
+    .icon-spotify svg { color: #1DB954; }
+    .icon-gallery svg { color: #d9b66e; }
+
+    .link-text strong {
+      display: block;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .link-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13px;
+      direction: ltr;
+      unicode-bidi: plaintext;
+    }
+
+    .arrow {
+      color: var(--gold-soft);
+      font-size: 24px;
+      text-align: center;
+      transform: rotate(180deg);
+    }
+
+    .thumbs {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .thumbs a {
+      display: block;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(255,247,232,.10);
+      aspect-ratio: 1 / 1;
+    }
+
+    .thumbs img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(.92) contrast(1.03);
+      transition: transform .28s ease;
+    }
+
+    .thumbs a:hover img {
+      transform: scale(1.04);
+    }
+
+    .footer-note {
+      text-align: center;
+      color: rgba(255,247,232,.56);
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+      padding: 0 15px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.34);
+      border: 1px solid rgba(241,221,170,.28);
+      color: var(--gold-soft);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      width: fit-content;
+    }
+
+    .hash {
+      margin-top: 18px;
+      color: rgba(255,255,255,.96);
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 900;
+      text-shadow: 0 3px 14px rgba(0,0,0,.55);
+    }
+
+    h1 {
+      margin: 12px 0 0;
+      font-size: clamp(54px, 8vw, 94px);
+      line-height: .9;
+      letter-spacing: -.07em;
+    }
+
+    .en-name {
+      display: block;
+      direction: ltr;
+      margin-top: 14px;
+      color: var(--gold-soft);
+      font-size: clamp(25px, 3vw, 42px);
+      font-weight: 800;
+      letter-spacing: .01em;
+    }
+
+    .hero-bio {
+      max-width: 640px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.65;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .mini-btn {
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,247,232,.16);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 14px;
+      backdrop-filter: blur(8px);
+    }
+
+    .mini-btn:hover {
+      background: rgba(241,221,170,.16);
+      border-color: rgba(241,221,170,.34);
+    }
+
+    @media (max-width: 930px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+      .panel {
+        order: 2;
+      }
+      .hero {
+        order: 1;
+        min-height: 620px;
+      }
+      .hero-content {
+        min-height: 620px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 10px; }
+      .panel, .hero {
+        border-radius: 28px;
+      }
+      .panel {
+        padding: 18px;
+      }
+      .hero {
+        min-height: 560px;
+      }
+      .hero-content {
+        min-height: 560px;
+        padding: 24px;
+      }
+      .thumbs {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .link {
+        min-height: 62px;
+        grid-template-columns: 44px 1fr 18px;
+        padding-inline: 14px;
+      }
+      .icon-box {
+        width: 44px;
+        height: 44px;
+      }
+      h1 {
+        font-size: clamp(46px, 15vw, 68px);
+      }
+      .en-name {
+        font-size: 28px;
+      }
+      .hash {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="panel" aria-label="קישורים רשמיים">
+      <div class="panel-head">
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/profile-square.jpg" alt="איליי זוסמן ריאל - Illy Zussman Real" width="900" height="900">
+        </div>
+        <h2>כל הקישורים של איליי</h2>
+        <p>עקבו אחרי איליי זוסמן ריאל והאזינו, צפו וקבלו עדכונים חדשים.</p>
+      </div>
+
+      <nav class="links" aria-label="קישורים רשמיים">
+        <a class="link" href="https://www.youtube.com/@illyzussmanreal" target="_blank" rel="noopener">
+          <span class="icon-box icon-youtube" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.75 15.5v-7L16 12l-6.25 3.5Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>YouTube</strong>
+            <span>@illyzussmanreal</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+
+        <a class="link" href="https://open.spotify.com/artist/32C8Elyy3YypFnic0X2vpi?si=2SJ1TY1cQb2b4W4DuRNNbg&nd=1&dlsi=cfc3e7312ccd4ad7" target="_blank" rel="noopener">
+          <span class="icon-box icon-spotify" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1 .25c-2.7-1.65-6.1-2.03-10.12-1.12a.75.75 0 1 1-.34-1.46c4.42-1 8.19-.57 11.25 1.3.35.21.46.67.21 1.03Zm1.43-3.18a.94.94 0 0 1-1.28.31c-3.1-1.91-7.84-2.46-11.5-1.33a.94.94 0 1 1-.56-1.79c4.18-1.31 9.38-.68 13.04 1.57.44.27.58.85.3 1.24Zm.12-3.32c-3.72-2.21-9.86-2.42-13.4-1.35a1.13 1.13 0 1 1-.65-2.16c4.07-1.23 10.85-1 15.2 1.58a1.13 1.13 0 0 1-1.15 1.93Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>Spotify</strong>
+            <span>listen now</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+
+        <a class="link" href="https://www.instagram.com/illy_zussman_real" target="_blank" rel="noopener">
+          <span class="icon-box icon-instagram" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7Zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3Zm10.75 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>Instagram</strong>
+            <span>@illy_zussman_real</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+
+        <a class="link" href="https://www.tiktok.com/@illy.zussman.real" target="_blank" rel="noopener">
+          <span class="icon-box icon-tiktok" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 2c.32 2.5 1.76 4 4.5 4.23v3.1a7.5 7.5 0 0 1-4.22-1.34v6.36c0 3.88-3 6.65-6.72 6.65-3.94 0-6.56-3.05-6.56-6.23 0-3.73 2.85-6.3 6.46-6.42.36-.01.72.02 1.05.1v3.23a3.44 3.44 0 0 0-.97-.14c-1.83 0-3.19 1.21-3.19 3.08 0 1.78 1.24 3.08 3 3.08 1.9 0 3.16-1.18 3.16-3.51V2h3.49Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>TikTok</strong>
+            <span>@illy.zussman.real</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+
+        <a class="link" href="https://www.facebook.com/profile.php?id=61554417440826" target="_blank" rel="noopener">
+          <span class="icon-box icon-facebook" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46H16.8V5a23 23 0 0 0-2.6-.13c-2.58 0-4.34 1.58-4.34 4.48V11H7v3h2.86v8h3.64Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>Facebook</strong>
+            <span>official page</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+
+        <a class="link" href="gallery.html">
+          <span class="icon-box icon-gallery" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 14.5v-9Zm2.5-.5a.5.5 0 0 0-.5.5v6.28l2.56-2.56a1 1 0 0 1 1.41 0l2.03 2.03 3.53-3.53a1 1 0 0 1 1.41 0L18 8.83V5.5a.5.5 0 0 0-.5-.5h-11Zm11.5 10.12-1.78-1.78-3.53 3.53a1 1 0 0 1-1.41 0L9.25 14.84 6 18.09V18.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-3.38ZM9 8.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM2 7.5A2.5 2.5 0 0 1 3 5.5v11A3.5 3.5 0 0 0 6.5 20H17a2.5 2.5 0 0 1-2 1H6.5A4.5 4.5 0 0 1 2 16.5v-9Z"/></svg>
+          </span>
+          <span class="link-text">
+            <strong>גלריית תמונות</strong>
+            <span>63 photos</span>
+          </span>
+          <span class="arrow">‹</span>
+        </a>
+      </nav>
+
+      <div class="thumbs" aria-label="תמונות נבחרות">
+        <a href="gallery.html"><img src="assets/gallery/gallery-01.jpg" alt="איליי זוסמן ריאל"></a><a href="gallery.html"><img src="assets/gallery/gallery-04.jpg" alt="איליי זוסמן ריאל"></a><a href="gallery.html"><img src="assets/gallery/gallery-08.jpg" alt="איליי זוסמן ריאל"></a><a href="gallery.html"><img src="assets/gallery/gallery-13.jpg" alt="איליי זוסמן ריאל"></a><a href="gallery.html"><img src="assets/gallery/gallery-19.jpg" alt="איליי זוסמן ריאל"></a><a href="gallery.html"><img src="assets/gallery/gallery-63.jpg" alt="איליי זוסמן ריאל"></a>
+      </div>
+
+      <div class="footer-note">
+        Official Links · Illy Zussman Real
+      </div>
+    </section>
+
+    <section class="hero" aria-label="איליי זוסמן ריאל">
+      <div class="hero-content">
+        <div class="badge">זמר בלהקה צבאית</div>
+        <div class="hash">#Singer &amp; Musician</div>
+        <h1>איליי<br>זוסמן ריאל
+          <span class="en-name">Illy Zussman Real</span>
+        </h1>
+        <p class="hero-bio">
+          זמר ונגן. קול צעיר, נוכחות שקטה, מוזיקה שמתחילה מהלב, מתפתחת בחדר החזרות ועולה לבמה.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="mini-btn" href="https://www.youtube.com/@illyzussmanreal" target="_blank" rel="noopener">YouTube</a>
+          <a class="mini-btn" href="https://open.spotify.com/artist/32C8Elyy3YypFnic0X2vpi?si=2SJ1TY1cQb2b4W4DuRNNbg&nd=1&dlsi=cfc3e7312ccd4ad7" target="_blank" rel="noopener">Spotify</a>
+          <a class="mini-btn" href="gallery.html">גלריה</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
